@@ -31,12 +31,22 @@ continuare per ulteriori sperimentazioni
 
 </head>
 <body>
-
-    <header>
-        <img class="logo" src="./img/logo.png" alt="Spotify logo">
-    </header>
-
     <div id="app">
+
+        <header class="d-flex justify-content-between">
+            <img class="logo" src="./img/logo.png" alt="Spotify logo">
+            <select 
+            v-model="selectedGenre">
+            <option value="">Select the genre</option>
+            <option 
+                v-for="(genre,index) in genreList" 
+                :key="index"
+                :value="genre">
+                {{genre}}
+            </option>
+        </select>
+        </header>
+
         <div class="container">
             <div class="row">
                 <div class="album-card col-5" v-for="disco in dischi" >
