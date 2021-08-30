@@ -2,25 +2,35 @@ body{
     background-color: #1e2d3b;
 }
 
+header{
+    padding: 12px;
+    background-color: #2e3a46 ;
+    margin-bottom: 24px;
+}
+
+.logo{
+    width: 50px
+}
+
 .album-card{
     text-align: center;
     background-color: #2e3a46;
     padding: 14px;
     margin: 20px;
-    height: 350px;
+}
+
+img{
+    width: 100%;
 }
 
 h5{
     color: white;
+    text-transform: uppercase;
+    padding: 15px 0;
 }
 
 h6{
     color: gray;
-}
-
-img{
-    padding-bottom: 24px; 
-    width: 100%;
 }
 
 .col-5{

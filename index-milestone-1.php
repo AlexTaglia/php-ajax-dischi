@@ -21,6 +21,10 @@ ci saranno tutti i dischi.
     require_once __DIR__ . "/database/dischi.php";
 ?>
 
+<header>
+    <img class="logo" src="./img/logo.png" alt="Spotify logo">
+</header>
+
 <div class="container">
     <div class="row">
 
