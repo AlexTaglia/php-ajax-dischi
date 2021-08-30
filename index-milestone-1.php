@@ -27,11 +27,11 @@ ci saranno tutti i dischi.
         <?php 
             foreach($dischi as $disco) {?>
 
-                <div class="card col-3" >
+                <div class="album-card col-5" >
                     <img src="<?php echo $disco['poster'] ?>" alt="">
-                    <div><?php echo $disco['title'] ?></div>
-                    <div><?php echo $disco['author'] ?></div>
-                    <div><?php echo $disco['year'] ?></div>
+                    <h5><?php echo $disco['title'] ?></h5>
+                    <h6><?php echo $disco['author'] ?></h6>
+                    <h6><?php echo $disco['year'] ?></h6>
                 </div>
 
             <?php

@@ -1,0 +1,56 @@
+body{
+    background-color: #1e2d3b;
+}
+
+.album-card{
+    text-align: center;
+    background-color: #2e3a46;
+    padding: 14px;
+    margin: 20px;
+    height: 350px;
+}
+
+h5{
+    color: white;
+}
+
+h6{
+    color: gray;
+}
+
+img{
+    padding-bottom: 24px; 
+    width: 100%;
+}
+
+.col-5{
+    width: calc(100% - 40px);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 503px) {  
+    .col-5{
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+/* large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    .col-5{
+        width: calc(100% / 3 - 40px);
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .col-5{
+        width: calc(100% / 4 - 40px);
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .col-5{
+        width: calc(100% / 5 - 40px);
+    }
+}
