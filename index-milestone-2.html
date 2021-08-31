@@ -36,11 +36,23 @@ continuare per ulteriori sperimentazioni
 
         <header class="d-flex justify-content-between">
             <img class="logo" src="./img/logo.png" alt="Spotify logo">
-            <div class="">
+            <!-- <div class="">
                 <button @click="getAll">All</button>
                 <button @click="getRock">Rock</button>
                 <button @click="getPop">Pop</button>
-            </div>
+            </div> -->
+            <select 
+            v-model="selectedGenre"
+            @change="getfilter">
+                <option value="">Select the genre</option>
+                <option 
+                    v-for="(genre,index) in genreList" 
+                    :key="index"
+                    :value="genre">
+                    {{genre}}
+                </option>
+            </select>
+            
         </header>
 
         <div class="container">
