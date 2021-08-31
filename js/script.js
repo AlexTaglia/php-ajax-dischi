@@ -21,7 +21,21 @@ new Vue(
                         this.dischi = response.data;
                         console.log("Rock")
                 })
-            }
+            },
+            getPop(){
+                axios.get('http://localhost:8888/es/08.30%20php-ajax-dischi/php-ajax-dischi/backend/api.php?genre=Pop')
+                .then((response) => {
+                        this.dischi = response.data;
+                        console.log("Pop")
+                })
+            },
+            getAll(){
+                axios.get('http://localhost:8888/es/08.30%20php-ajax-dischi/php-ajax-dischi/backend/api.php')
+                .then((response) => {
+                        this.dischi = response.data;
+                        console.log("All")
+                })
+            },
         }
         
     }
