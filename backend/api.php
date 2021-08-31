@@ -2,7 +2,11 @@
 
 require_once __DIR__ . "/../database/dischi.php";
 
-$genre = $_GET["genre"];
+if(!empty($_GET["genre"])){
+    $genre = $_GET["genre"];
+} else {
+    $genre = "";
+}
 
 if($genre){
     
